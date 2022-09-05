@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snack Restauraunt</title>
+    <link rel="stylesheet" href="about.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav id="nav">
+        <a href="index.html"><img src="Images/Logo.png" alt="Snack" /></a>
+        <article class="nav-links" id="navlinks">
+          <img
+            src="Images/fa-times.png"
+            class="close"
+            onclick="hidemenu()"
+            alt="fa-times"
+          />
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </article>
+        <img
+          src="Images/fa-bars.png"
+          class="close"
+          onclick="showmenu()"
+          alt="fa-bars"
+        />
+      </nav>
+    </header>
+
+    <footer id="footer">
+      <a href="https://www.youtube.com/"
+        ><img src="Images/Youtube.png" class="footerlogo" alt="Youtube"
+      /></a>
+      <a href="https://twitter.com/"
+        ><img src="Images/Twitter.png" class="footerlogo" alt="Twitter"
+      /></a>
+      <a href="https://www.instagram.com/"
+        ><img src="Images/Instagram.png" class="footerlogo" alt="Instagram"
+      /></a>
+      <a href="https://www.tiktok.com/en/"
+        ><img src="Images/Tiktok.png" class="footerlogo" alt="Tiktok"
+      /></a>
+      <a href="https://www.linkedin.com/"
+        ><img src="Images/Linkedin.png" class="footerlogo" alt="Linkedin"
+      /></a>
+    </footer>
+
+    <script>
+      var navlinks = document.getElementById("navlinks");
+      function showmenu() {
+        navlinks.style.right = "0";
+      }
+      function hidemenu() {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snack Restauraunt</title>
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav id="nav">
+        <a href="index.html"><img src="Images/Logo.png" alt="Snack" /></a>
+        <article class="nav-links" id="navlinks">
+          <img
+            src="Images/fa-times.png"
+            class="close"
+            onclick="hidemenu()"
+            alt="fa-times"
+          />
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </article>
+        <img
+          src="Images/fa-bars.png"
+          class="close"
+          onclick="showmenu()"
+          alt="fa-bars"
+        />
+      </nav>
+    </header>
+
+    <section class="menuitems">
+      <ul class="items">
+        <li class="snackitems">
+          <a href="purchase.html"><img src="Images/PBJ.webp" alt="pbj" /></a>
+          <h3>Peanut Butter & Jelly</h3>
+          <p>A staple for snacks! You can customize any ingredients.</p>
+        </li>
+
+        <li class="snackitems">
+          <a href="purchase.html"
+            ><img src="Images/HamCh.jpeg" alt="hamcheese"
+          /></a>
+          <h3>Ham & Cheese</h3>
+          <p>A nice classic sandwich.</p>
+          <p>
+            You can customize the bread or cheese, and even asked to grilled.
+          </p>
+        </li>
+
+        <li class="snackitems">
+          <a href="purchase.html"
+            ><img src="Images/Trail.webp" alt="trailmix"
+          /></a>
+          <h3>Trail-Mix</h3>
+          <p>Simple finger food with a variety of items to customize.</p>
+        </li>
+
+        <li class="snackitems">
+          <a href="purchase.html"
+            ><img src="Images/Peanuts.webp" alt="peanuts"
+          /></a>
+          <h3>Peanuts</h3>
+          <p>Try our nuts. Many variety to choose from.</p>
+        </li>
+
+        <li class="snackitems">
+          <a href="purchase.html"
+            ><img src="Images/Chips.jpeg" alt="chips"
+          /></a>
+          <h3>Chips</h3>
+          <p>We have too many chaps please take them.</p>
+          <p>Different kinds available.</p>
+        </li>
+
+        <li class="snackitems">
+          <a href="purchase.html"
+            ><img src="Images/Fries.jpeg" alt="fries"
+          /></a>
+          <h3>Fries</h3>
+          <p>Hot, crispy fries ready to go. Many types to choose from.</p>
+        </li>
+
+        <li class="snackitems">
+          <a href="purchase.html"
+            ><img src="Images/Pudding.jpeg" alt="pudding"
+          /></a>
+          <h3>Banana Pudding</h3>
+          <p>Favorite of many. Not much to customize but still delicious</p>
+        </li>
+
+        <li class="snackitems">
+          <a href="purchase.html"
+            ><img src="Images/Cream.png" alt="icecream"
+          /></a>
+          <h3>Icream Cream</h3>
+          <p>Many flavors, even more combinations.</p>
+        </li>
+      </ul>
+    </section>
+
+    <article class="see">You cant see me</article>
+
+    <footer id="footer">
+      <a href="https://www.youtube.com/"
+        ><img src="Images/Youtube.png" class="footerlogo" alt="Youtube"
+      /></a>
+      <a href="https://twitter.com/"
+        ><img src="Images/Twitter.png" class="footerlogo" alt="Twitter"
+      /></a>
+      <a href="https://www.instagram.com/"
+        ><img src="Images/Instagram.png" class="footerlogo" alt="Instagram"
+      /></a>
+      <a href="https://www.tiktok.com/en/"
+        ><img src="Images/Tiktok.png" class="footerlogo" alt="Tiktok"
+      /></a>
+      <a href="https://www.linkedin.com/"
+        ><img src="Images/Linkedin.png" class="footerlogo" alt="Linkedin"
+      /></a>
+    </footer>
+
+    <script>
+      var navlinks = document.getElementById("navlinks");
+      function showmenu() {
+        navlinks.style.right = "0";
+      }
+      function hidemenu() {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
